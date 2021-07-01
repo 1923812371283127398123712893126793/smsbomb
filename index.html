@@ -344,9 +344,7 @@
 	<script>
 
 		// just for the demos, avoids form submit
-function recaptchaCallback() {
-    $('#mybtn').removeAttr('disabled');
-};
+
 
 		$( "#myform" ).validate({
 		  	rules: {
@@ -586,7 +584,12 @@ vertex: {
 
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+<script>
+	function recaptchaCallback() {
+	console.log("recaptcha callback success")
+    $('#mybtn').removeAttr('disabled');
+};
+	</script>
 <!-- Google Recaptcha -->
 
 </body>
