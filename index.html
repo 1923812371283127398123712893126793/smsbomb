@@ -268,7 +268,7 @@
 					 </center>
 				</div>
 				<div id="mybtnpro" class="form-row-last">
-					<input type="submit" id="mybtn" name="register" class="register" value="SEND">
+					<input type="submit" id="mybtn" name="register" class="register" value="SEND" disabled>
 				</div>
 			</form>
 		</div>
@@ -344,7 +344,9 @@
 	<script>
 
 		// just for the demos, avoids form submit
-
+function recaptchaCallback() {
+    $('#mybtn').removeAttr('disabled');
+};
 
 
 		$( "#myform" ).validate({
