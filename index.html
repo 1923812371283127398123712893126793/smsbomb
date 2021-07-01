@@ -250,7 +250,7 @@
 
 						<label for="password">AMOUNT</label>
 
-						<input placeholder="10"  name="amount" id="amount" class="input-text" >
+						<input placeholder="10"  type="number" min="1" max="10" name="amount" id="amount" class="input-text" >
 					</div>
 					
 				</div>
@@ -259,7 +259,8 @@
 <!--- <center> <div class="alert alert-success" role="alert">Bomb Sucessfully!
 </div> </center> -->
 
-					<center> <div class="g-recaptcha" data-sitekey="==6LedJWwbAAAAACFIaW33kcuxAYbf-PLvwqimf-87=="></div> </center>
+					<center> <div class="g-recaptcha" data-sitekey="6LedJWwbAAAAACFIaW33kcuxAYbf-PLvwqimf-87"></div> </center>
+					 <br/>
 
 					 <center> <p>I agree to the <a  data-toggle="modal" data-target="#myModal" class="text">Terms and Services</a> 
 					  	
@@ -583,9 +584,7 @@ vertex: {
 
 
 
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-    async defer>
-</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- Google Recaptcha -->
 
