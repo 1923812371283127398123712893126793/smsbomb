@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+<script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
 <!-- new added -->
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -267,7 +267,7 @@
 					 </center>
 				</div>
 				<div id="mybtnpro" class="form-row-last">
-					<input type="submit"  id="mybtn" name="register" class="register" value="SEND">
+					<input type="submit" id="mybtn" name="register" class="register" value="SEND">
 				</div>
 			</form>
 		</div>
@@ -369,27 +369,17 @@ var request;
 
 // Bind to the submit event of our form
 $("#myform").submit(function(event){
-    //change button send value and disable for spam
+    
+    if ($('#number').val() != "" & $('#amount').val() != "" ) {
+
+
+      //change button send value and disable for spam
     $( "#mybtn" ).prop( "disabled", true );
     $('#mybtn').val('SENDING...');
-
-    // Prevent default posting of form - put here to work in case of errors
     event.preventDefault();
-
-    // hide send button
-    //$("#mybtnpro").hide();
-
-    // Abort any pending request
-    if (request) {
-        request.abort();
-    }
-    // setup some local variables
+    if (request) {request.abort();}
     var $form = $(this);
-
-    // Let's select and cache all the fields
     var $inputs = $form.find("input");
-
-    // Serialize the data in the form
     var serializedData = $form.serialize();
 
     // Let's disable the inputs for the duration of the Ajax request.
@@ -399,7 +389,7 @@ $("#myform").submit(function(event){
 
     // Fire off the request to /form.php
     request = $.ajax({
-    	  url: "https://zekezeek.pythonanywhere.com",
+        url: "https://zekezeek.pythonanywhere.com",
         //headers: {'origin': 'https://smsbomb.me'},
         type: "get",
         data: serializedData
@@ -417,9 +407,9 @@ $("#myform").submit(function(event){
         clearTimeout (timer);
         timer = setTimeout(callback, ms);
     };
-})();
+ })();
 
-delay(function(){
+ delay(function(){
 
     $("#modalb3").click();
     $( "#mybtn" ).prop( "disabled", false );
@@ -428,8 +418,10 @@ delay(function(){
     document.getElementById('number').value = ''
     
 
-//$("#mybtnpro").show();
-}, 2000 ); // end delay
+ //$("#mybtnpro").show();
+ }, 2000 ); 
+
+ // end delay
 
     });
 
@@ -448,6 +440,12 @@ delay(function(){
         // Reenable the inputs
         $inputs.prop("disabled", false);
     });
+
+
+
+    } else {
+      console.log("Form empty")
+    }
 
 });
 
@@ -583,11 +581,7 @@ vertex: {
 </script>
 <!-- Google Recaptcha -->
 
-<script type="text/javascript">
-  var onloadCallback = function() {
-    alert("grecaptcha is ready!");
-  };
-</script>
+
 <script type="text/javascript">
       var onloadCallback = function() {
         grecaptcha.render('html_element', {
