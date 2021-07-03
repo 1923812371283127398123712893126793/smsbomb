@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>SMSbomber</title>
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Font-->
-	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
-	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
-	<!-- Jquery -->
-	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
-	<!-- Main Style Css -->
+  <meta charset="utf-8">
+  <title>SMSbomber</title>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Font-->
+  <link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+  <link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+  <!-- Jquery -->
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ 
+  <!-- Main Style Css -->
     <link rel="stylesheet" href="css/style.css"/>
      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script> -->
 <!-- new added -->
@@ -24,10 +25,57 @@
 </head>
 <body>
 
-  <div id="modalb2" class="text-center">
-  <!-- Button HTML (to Trigger Modal) -->
-  <button href="#myModal1" id="modalb3" class="trigger-btn2" data-toggle="modal"></button>
-</div>
+
+
+
+<!-- MODAL NEW -->
+
+
+
+
+
+<!-- Modal 2 HTML -->
+<div id="exampleModal" class="modal fade bd-example-modal-sm">
+  <div style=""  class="modal-dialog modal-confirm">
+    <div class="modal-content">
+      <div style="padding: 30px 30px 30px 30px;"class="modal-header justify-content-center">
+       
+          <center> <h2 class="modal2title">PROTECT NUMBER</h2>
+
+        
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+
+          <div class="modal-body">
+        <form action="#"> 
+          <br>
+            <div class="form-group">
+    <label for="formGroupExampleInput">MOBILE NUMBER:</label>
+    <input style="height: 50px;"type="text" class="form-control" id="formGroupExampleInput" placeholder="9XXXXXXXX" disabled>
+   
+  </div>
+
+  <br>
+ <button style="height: 45px; " type="submit" class="btn btn-primary" id="load1">SUBMIT</but
+ton>
+ </div>
+
+        
+          </div>
+
+       
+      </div>
+   
+       
+ 
+    </div>
+
+  </div>
+
+  </form>
+
+</div>  
 
 
 
@@ -48,7 +96,9 @@
       </div>
     </div>
   </div>
-</div>     
+</div>  
+
+
 <div class="rain rain1"></div>
 <div class="rain rain2">
   <div class="drop drop2"></div>
@@ -204,75 +254,74 @@
     </div>
   </div>
 </div>
-	<div class="page-content">
-		<div class="form-v4-content">
+  <div class="page-content">
+    <div class="form-v4-content">
 
-			<div class="form-left">
-				<div class='wave -one'></div>
+      <div class="form-left">
+        <div class='wave -one'></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
 <h1 class="h1center"></h1>
 
-				<div class="console"> 
-				<p class="consolep">>
+        <div class="console"> 
+        <p class="consolep">>
 
 
-		<span class="consolespan">SYSTEM</span>: "<i id="message1">Welcome to SMSBomber...</i>"</p>
+    <span class="consolespan">SYSTEM</span>: "<i id="message1">Welcome to SMSBomber...</i>"</p>
 
-<p class="consolep">> <span  class="consolespan">TERMS OF SERVICES</span>: "<i class="consolei">You can not use this tool for taking any kind of revenge/irritate/hesitate others. If you use sms bomber for any purpose which is prohibited, then you are responsible yourself for the act.</i>"</p>
+<p class="consolep">> <span  class="consolespan">TERMS OF SERVICES</span>: "<i class="consolei">You can not use this tool for taking any kind of revenge/irritate/hesitate others. If you use sms bomber for any purpose which is prohibited, then you are responsible yourself for the act. Click <a  data-toggle="modal" data-target="#myModal" class="text">Here</a> for the full statement."</i></p>
 
 <p class="consolep">&gt; <span class="consolespan">DISCLAIMER</span>: [<b class="consoleb">Any action you take upon the information you find on this website SMS bomber, is strictly at your own risk. SMS Bomber will not be liable for any losses and/or damages in connection with the use of our website. If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at support@smsbomb.me</b>...]</p>
 
-<p class="consolep">> <span class="consolespan">ABOUT</span>: <a class="consolea" href="/">Created with ♥ by <a href="https://www.facebook.com/VbUuB1aN2DA">Dave</a> All Rights Reserved © 2017 Cybriq Developers. </a></p>
+<p class="consolep">> <span class="consolespan">ABOUT</span>: <a class="consolea" href="/">Created with ♥ by <a href="https://www.facebook.com/VbUuB1aN2DA"><b> Dave </b></a> </a></p>
 </div>
 
 
 <!-- partial -->
 
-			</div>
+      </div>
 
-			<form class="form-detail" action="#" method="post" name="myform" id="myform">
-				<center> <h2 class="myh1">ONLINE SMSBOMBER</h2> </center>
-				<div class="form-group">
-					
-	
-				</div>
+      <form class="form-detail" name="myform" id="myform">
+        <center> <h2 class="myh1">ONLINE SMSBOMBER</h2> </center>
+        <div class="form-group">
+          
+  
+        </div>
 
-				<div class="form-row form-row-1 ">
+        <div class="form-row form-row-1 ">
 
-					<label  for="number">NUMBER</label>
+          <label  for="number">NUMBER</label>
 
-					<input placeholder="9XXXXXXXXX" name="number" id="number" class="input-text" required pattern="[[0-9]{10}">
-				</div>
+          <input placeholder="9XXXXXXXXX" name="number" id="number" class="input-text" required pattern="[[0-9]{10}">
+        </div>
 
-				<div class="form-row form-row-1">
-					<div class="form-row form-row-1 ">
+        <div class="form-row form-row-1">
+          <div class="form-row form-row-1 ">
 
-						<label for="password">AMOUNT</label>
+            <label for="password">AMOUNT</label>
 
-						<input placeholder="10"  type="number" min="1" max="10" name="amount" id="amount" class="input-text" >
-					</div>
-					
-				</div>
-				 <div class="form-checkbox">
+            <input placeholder="20"  type="number" min="1" max="20" name="amount" id="amount" class="input-text" >
+          </div>
+          
+        </div>
+         <div class="form-checkbox">
 
-<!--- <center> <div class="alert alert-success" role="alert">Bomb Sucessfully!
-</div> </center> -->
 
-					<center> <div class="g-recaptcha" data-sitekey="6LedJWwbAAAAACFIaW33kcuxAYbf-PLvwqimf-87" data-callback="recaptcha_callback"></div> </center>
-					 <br/> 
 
-					 <center> <p>I agree to the <a  data-toggle="modal" data-target="#myModal" class="text">Terms and Services</a> 
-					  	
-					  	
-					 </center>
-				</div>
-				<div id="mybtnpro" class="form-row-last">
-					<input type="submit" id="mybtn" name="register" class="register" value="SEND" disabled>
-				</div>
-			</form>
-		</div>
-	</div>
+          <center> <div class="g-recaptcha" data-sitekey="6LedJWwbAAAAACFIaW33kcuxAYbf-PLvwqimf-87" data-callback="recaptcha_callback"></div> </center>
+           <br/> 
+
+           <center> <p>Protect your number <a  data-toggle="modal" data-target="#exampleModal" class="text">Click Here</a> 
+              
+              
+           </center>
+        </div>
+        <div id="mybtnpro" class="form-row-last">
+          <input type="submit" id="mybtn" name="register" class="register" value="SEND" disabled>
+        </div>
+      </form>
+    </div>
+  </div>
 
 <div class="footer">
   <div class="bubbles">
@@ -316,8 +365,8 @@
 
   <div class="content">
     
-    <div><a class="image" href="https://codepen.io/z-" target="_blank" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)"></a>
-      <center> <p>©2017 Cybriq Developers</p> </center>
+    <div><a class="image" href="" target="_blank" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)"></a>
+      <center> <p >All Rights Reserved © 2017 Cybriq Developers.</p> </center>
     </div>
   </div>
 </div>
@@ -331,38 +380,38 @@
   </defs>
 </svg>
 <!-- partial -->
-	<!-- footer 2 design
+  <!-- footer 2 design
 
 <div id='footer'></div> 
 
 -->
 
 
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-	<script>
 
-		// just for the demos, avoids form submit
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <script>
+
+    // just for the demos, avoids form submit
 
 
-		$( "#myform" ).validate({
-		  	rules: {
-			    number: "required",
-		  	},
-		  	messages: {
-		  		number: {
-		  			required: "Please enter a number"
-		    	}
-		  	}
-		});
+    $( "#myform" ).validate({
+        rules: {
+          number: "required",
+        },
+        messages: {
+          number: {
+            required: "Please enter a number"
+          }
+        }
+    });
 
-	</script>
-	<script>
+  </script>
+  <script>
 
-	</script>
+  </script>
 
-	<script>
+  <script>
 
 // Variable to hold request
 var request;
@@ -411,7 +460,9 @@ $("#myform").submit(function(event){
 
  delay(function(){
 
-    $("#modalb3").click();
+  
+    jQuery.noConflict();
+    $('#myModal1').modal('show');
     $( "#mybtn" ).prop( "disabled", false );
     $('#mybtn').val('SEND');
     document.getElementById('amount').value = ''
@@ -452,8 +503,8 @@ $("#myform").submit(function(event){
 </script>
 
 
-	 <script>
-	 	consoleText()
+   <script>
+    consoleText()
 
 function consoleText() {
     var str = document.getElementsByClassName('console')[0].innerHTML.toString();
@@ -585,13 +636,12 @@ vertex: {
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
-	function recaptcha_callback() {
-	console.log("recaptcha callback success")
+  function recaptcha_callback() {
+  console.log("recaptcha callback success")
     $('#mybtn').removeAttr('disabled');
 };
-	</script>
+  </script>
 <!-- Google Recaptcha -->
-
 </body>
 
 
