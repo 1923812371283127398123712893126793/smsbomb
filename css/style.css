@@ -1,649 +1,769 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>SMSbomber</title>
-  <!-- Mobile Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Font-->
-  <link rel="stylesheet" type="text/css" href="css/opensans-font.css">
-  <link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
-  <!-- Jquery -->
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
+body {
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
- 
-  <!-- Main Style Css -->
-    <link rel="stylesheet" href="css/style.css"/>
-     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<!-- <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script> -->
-<!-- new added -->
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
-
-
-
-
-<!-- MODAL NEW -->
-
-
-
-
-
-<!-- Modal 2 HTML -->
-<div id="exampleModal" class="modal fade bd-example-modal-sm">
-  <div style=""  class="modal-dialog modal-confirm">
-    <div class="modal-content">
-      <div style="padding: 30px 30px 30px 30px;"class="modal-header justify-content-center">
-       
-          <center> <h2 class="modal2title">PROTECT NUMBER</h2>
-
-        
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      </div>
-      <div class="modal-body text-center">
-
-          <div class="modal-body">
-        <form action="#"> 
-          <br>
-            <div class="form-group">
-    <label for="formGroupExampleInput">MOBILE NUMBER:</label>
-    <input style="height: 50px;"type="text" class="form-control" id="formGroupExampleInput" placeholder="9XXXXXXXX" disabled>
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "main" "footer";
+  overflow-x: hidden;
+  background: #F5F7FA;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  margin:  0;
+  width:100%;
+   height:100vh;
    
-  </div>
-
-  <br>
- <button style="height: 45px; " type="submit" class="btn btn-primary" id="load1">SUBMIT</but
-ton>
- </div>
-
-        
-          </div>
-
-       
-      </div>
-   
-       
- 
-    </div>
-
-  </div>
-
-  </form>
-
-</div>  
-
-
-
-<!-- Modal HTML -->
-<div id="myModal1" class="modal fade">
-  <div class="modal-dialog modal-confirm">
-    <div class="modal-content">
-      <div class="modal-header justify-content-center">
-        <div class="icon-box">
-          <i class="material-icons">&#xE876;</i>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      </div>
-      <div class="modal-body text-center">
-        <h4>Success!</h4> 
-        <p id="modalmsg">Messages has been sent successfully.</p>
-       
-      </div>
-    </div>
-  </div>
-</div>  
-
-
-<div class="rain rain1"></div>
-<div class="rain rain2">
-  <div class="drop drop2"></div>
-</div>
-<div class="rain rain3"></div>
-<div class="rain rain4"></div>
-<div class="rain rain5">
-  <div class="drop drop5"></div>
-</div>
-<div class="rain rain6"></div>
-<div class="rain rain7"></div>
-<div class="rain rain8">
-  <div class="drop drop8"></div>
-</div>
-<div class="rain rain9"></div>
-<div class="rain rain10"></div>
-<div class="drop drop11"></div>
-<div class="drop drop12"></div>
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <center> <h4 class="modal-title">TERMS OF SERVICES</h4> </center>
-        </div>
-        <div class="modal-body">
-
-
-<p>These terms and conditions outline the rules and regulations for the use of SMSBomb's Website, located at https://smsbomb.me.</p>
-
-<p>By accessing this website we assume you accept these terms and conditions. Do not continue to use smsbomb.me if you do not agree to take all of the terms and conditions stated on this page.</p>
-
-<p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
-
-<h3><strong>Cookies</strong></h3>
-
-<p>We employ the use of cookies. By accessing smsbomb.me, you agreed to use cookies in agreement with the SMSBomb's Privacy Policy. </p>
-
-<p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
-
-<h3><strong>License</strong></h3>
-
-<p>Unless otherwise stated, SMSBomb and/or its licensors own the intellectual property rights for all material on smsbomb.me. All intellectual property rights are reserved. You may access this from smsbomb.me for your own personal use subjected to restrictions set in these terms and conditions.</p>
-
-<p>You must not:</p>
-<ul>
-    <li>Republish material from smsbomb.me</li>
-    <li>Sell, rent or sub-license material from smsbomb.me</li>
-    <li>Reproduce, duplicate or copy material from smsbomb.me</li>
-    <li>Redistribute content from smsbomb.me</li>
-</ul>
-
-<p>This Agreement shall begin on the date hereof.</p>
-
-<p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. SMSBomb does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of SMSBomb,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, SMSBomb shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
-
-<p>SMSBomb reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
-
-<p>You warrant and represent that:</p>
-
-<ul>
-    <li>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;</li>
-    <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;</li>
-    <li>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy</li>
-    <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
-</ul>
-
-<p>You hereby grant SMSBomb a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
-
-<h3><strong>Hyperlinking to our Content</strong></h3>
-
-<p>The following organizations may link to our Website without prior written approval:</p>
-
-<ul>
-    <li>Government agencies;</li>
-    <li>Search engines;</li>
-    <li>News organizations;</li>
-    <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and</li>
-    <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
-</ul>
-
-<p>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.</p>
-
-<p>We may consider and approve other link requests from the following types of organizations:</p>
-
-<ul>
-    <li>commonly-known consumer and/or business information sources;</li>
-    <li>dot.com community sites;</li>
-    <li>associations or other groups representing charities;</li>
-    <li>online directory distributors;</li>
-    <li>internet portals;</li>
-    <li>accounting, law and consulting firms; and</li>
-    <li>educational institutions and trade associations.</li>
-</ul>
-
-<p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of SMSBomb; and (d) the link is in the context of general resource information.</p>
-
-<p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.</p>
-
-<p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to SMSBomb. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
-
-<p>Approved organizations may hyperlink to our Website as follows:</p>
-
-<ul>
-    <li>By use of our corporate name; or</li>
-    <li>By use of the uniform resource locator being linked to; or</li>
-    <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
-</ul>
-
-<p>No use of SMSBomb's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
-
-<h3><strong>iFrames</strong></h3>
-
-<p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
-
-<h3><strong>Content Liability</strong></h3>
-
-<p>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
-
-
-<h3><strong>Reservation of Rights</strong></h3>
-
-<p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
-
-<h3><strong>Removal of links from our website</strong></h3>
-
-<p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
-
-<p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
-
-<h3><strong>Disclaimer</strong></h3>
-
-<p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
-
-<ul>
-    <li>limit or exclude our or your liability for death or personal injury;</li>
-    <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
-    <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
-    <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
-</ul>
-
-<p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
-
-<p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="page-content">
-    <div class="form-v4-content">
-
-      <div class="form-left">
-        <div class='wave -one'></div>
-  <div class='wave -two'></div>
-  <div class='wave -three'></div>
-<h1 class="h1center"></h1>
-
-        <div class="console"> 
-        <p class="consolep">>
-
-
-    <span class="consolespan">SYSTEM</span>: "<i id="message1">Welcome to SMSBomber...</i>"</p>
-
-<p class="consolep">> <span  class="consolespan">TERMS OF SERVICES</span>: "<i class="consolei">You can not use this tool for taking any kind of revenge/irritate/hesitate others. If you use sms bomber for any purpose which is prohibited, then you are responsible yourself for the act. Click <a  data-toggle="modal" data-target="#myModal" class="text">Here</a> for the full statement."</i></p>
-
-<p class="consolep">&gt; <span class="consolespan">DISCLAIMER</span>: [<b class="consoleb">Any action you take upon the information you find on this website SMS bomber, is strictly at your own risk. SMS Bomber will not be liable for any losses and/or damages in connection with the use of our website. If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at support@smsbomb.me</b>...]</p>
-
-<p class="consolep">> <span class="consolespan">ABOUT</span>: <a class="consolea" href="/">Created with ♥ by <a href="https://www.facebook.com/VbUuB1aN2DA"><b> Dave </b></a> </a></p>
-</div>
-
-
-<!-- partial -->
-
-      </div>
-
-      <form class="form-detail" name="myform" id="myform">
-        <center> <h2 class="myh1">ONLINE SMSBOMBER</h2> </center>
-        <div class="form-group">
-          
+}
+.page-content {
   
-        </div>
-
-        <div class="form-row form-row-1 ">
-
-          <label  for="number">NUMBER</label>
-
-          <input placeholder="9XXXXXXXXX" name="number" id="number" class="input-text" required pattern="[[0-9]{10}">
-        </div>
-
-        <div class="form-row form-row-1">
-          <div class="form-row form-row-1 ">
-
-            <label for="password">AMOUNT</label>
-
-            <input placeholder="20"  type="number" min="1" max="20" name="amount" id="amount" class="input-text" >
-          </div>
-          
-        </div>
-         <div class="form-checkbox">
-
-
-
-          <center> <div class="g-recaptcha" data-sitekey="6LedJWwbAAAAACFIaW33kcuxAYbf-PLvwqimf-87" data-callback="recaptcha_callback"></div> </center>
-           <br/> 
-
-           <center> <p>Protect your number <a  data-toggle="modal" data-target="#exampleModal" class="text">Click Here</a> 
-              
-              
-           </center>
-        </div>
-        <div id="mybtnpro" class="form-row-last">
-          <input type="submit" id="mybtn" name="register" class="register" value="SEND" disabled>
-        </div>
-      </form>
-    </div>
-  </div>
-
-<div class="footer">
-  <div class="bubbles">
-      <div class="bubble" style="--size:5.684863716233388rem; --distance:7.812826107197967rem; --position:34.557853241179146%; --time:3.987525424387541s; --delay:-3.9240477869152746s;"></div>
-    <div class="bubble" style="--size:4.654266659167104rem; --distance:6.24012056137686rem; --position:59.017027818637345%; --time:3.9739504820032887s; --delay:-3.95024575476358s;"></div>
-    <div class="bubble" style="--size:2.5486794227498732rem; --distance:8.568492648879008rem; --position:102.7212255067957%; --time:3.765314995447826s; --delay:-2.6801858659303903s;"></div>
-    <div class="bubble" style="--size:5.281397530632213rem; --distance:8.551097464451761rem; --position:11.923945786489362%; --time:2.096187957011209s; --delay:-3.088616520613036s;"></div>
-    <div class="bubble" style="--size:3.829475376860219rem; --distance:7.408721753234852rem; --position:51.47045064503624%; --time:3.0470453195797256s; --delay:-3.401812722932364s;"></div>
-    <div class="bubble" style="--size:3.5667492471296187rem; --distance:8.899175850030264rem; --position:-4.424313926905274%; --time:2.7591101768784188s; --delay:-2.753638744395888s;"></div>
-    <div class="bubble" style="--size:2.8381164785360617rem; --distance:9.846437229614786rem; --position:10.14422733161916%; --time:2.179290953913718s; --delay:-2.242967168641157s;"></div>
-    <div class="bubble" style="--size:5.456896701531222rem; --distance:6.060233000658552rem; --position:-4.608407567208159%; --time:2.1731291013804754s; --delay:-2.3182445154393823s;"></div>
-    <div class="bubble" style="--size:2.9398241093381063rem; --distance:9.87462706005141rem; --position:75.13884886668595%; --time:3.0976509461445714s; --delay:-3.8606259458117838s;"></div>
-    <div class="bubble" style="--size:4.008433287710115rem; --distance:7.209388799530679rem; --position:27.569527343874576%; --time:2.5994346831601063s; --delay:-2.0574450494470424s;"></div>
-    <div class="bubble" style="--size:5.423404963637445rem; --distance:8.760722840063348rem; --position:76.02273732173997%; --time:2.7806175796256634s; --delay:-3.3166748210068446s;"></div>
-    <div class="bubble" style="--size:3.7950342772690204rem; --distance:6.418129803000431rem; --position:48.489380926326405%; --time:3.711769042208055s; --delay:-2.5369360184894996s;"></div>
-    <div class="bubble" style="--size:2.424812381207901rem; --distance:7.242054012135561rem; --position:0.7140169435550998%; --time:3.011667671904152s; --delay:-3.952367177078285s;"></div>
-   <div class="bubble" style="--size:4.516273277105436rem; --distance:6.830104304052107rem; --position:84.59139460380577%; --time:3.840128434973504s; --delay:-2.879957984826713s;"></div>
-    <div class="bubble" style="--size:2.5033925680689446rem; --distance:7.040586505181281rem; --position:73.44618573194289%; --time:2.983768114719406s; --delay:-2.5026837691376334s;"></div>
-    <div class="bubble" style="--size:2.4339695693768846rem; --distance:7.093156871209335rem; --position:34.0612664319019%; --time:3.3045617881374603s; --delay:-2.3702206197158797s;"></div>
-    <div class="bubble" style="--size:5.898328037750245rem; --distance:7.39999940901667rem; --position:74.93948716766839%; --time:3.4271014530417343s; --delay:-2.824176967389107s;"></div>
-    <div class="bubble" style="--size:2.9515743444141114rem; --distance:6.793876363596087rem; --position:72.34240908295632%; --time:3.0243439694608156s; --delay:-3.9234477941102828s;"></div>
-    <div class="bubble" style="--size:5.026623108614964rem; --distance:6.923324608363232rem; --position:69.10458890339495%; --time:3.0356953329757492s; --delay:-2.433043747712629s;"></div>
-    <div class="bubble" style="--size:3.8669074858144192rem; --distance:7.400404024334749rem; --position:-4.670847676007204%; --time:3.4501626202650626s; --delay:-3.91855032442853s;"></div>
-    <div class="bubble" style="--size:2.5863329945986973rem; --distance:7.737219689847029rem; --position:59.84604175608331%; --time:3.144329886641896s; --delay:-2.9189942937333893s;"></div>
-    <div class="bubble" style="--size:4.8546721067577145rem; --distance:9.178877369280256rem; --position:75.74762524976144%; --time:2.2638023657389588s; --delay:-3.22351956991665s;"></div>
-    <div class="bubble" style="--size:2.5890710817986093rem; --distance:9.002010570953226rem; --position:2.0586998106060816%; --time:3.8912310920357736s; --delay:-2.391696647150653s;"></div>
-    <div class="bubble" style="--size:5.007738590811071rem; --distance:8.734203987992146rem; --position:11.99097888261532%; --time:3.750156262374763s; --delay:-3.183692529843641s;"></div>
-   <div class="bubble" style="--size:5.165472001544589rem; --distance:8.040099895814645rem; --position:98.85308382484249%; --time:3.538729362029991s; --delay:-2.685213896394519s;"></div>
-    <div class="bubble" style="--size:3.721459860769297rem; --distance:7.082285159946169rem; --position:28.727300576664483%; --time:2.0467794079120214s; --delay:-2.3937476816525685s;"></div>
-    <div class="bubble" style="--size:3.4965545690873787rem; --distance:7.280063264635106rem; --position:73.87411472424981%; --time:2.095989683797111s; --delay:-2.5602755513460624s;"></div>
-    <div class="bubble" style="--size:5.593076076436108rem; --distance:8.810455355074726rem; --position:12.644101937798517%; --time:2.655578800610842s; --delay:-3.1862153831746673s;"></div>
-    <div class="bubble" style="--size:2.9135103193800527rem; --distance:9.878617922950193rem; --position:54.147259309418224%; --time:3.2363130893868832s; --delay:-3.5522429507353053s;"></div>
-    <div class="bubble" style="--size:4.302621267375274rem; --distance:6.179278072963834rem; --position:18.04457122826208%; --time:2.1378486598763806s; --delay:-3.802270593777628s;"></div>
-    <div class="bubble" style="--size:2.632749973645611rem; --distance:8.11180128513353rem; --position:98.36358322878702%; --time:3.292715507437327s; --delay:-2.540477529953533s;"></div>
-    <div class="bubble" style="--size:2.6852549528896974rem; --distance:7.168808050865622rem; --position:23.514385839021017%; --time:3.183357626119195s; --delay:-3.758057642889918s;"></div>
-    
-    
-    
-    
-  </div>
-
-  <div class="content">
-    
-    <div><a class="image" href="" target="_blank" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg&quot;)"></a>
-      <center> <p >All Rights Reserved © 2017 Cybriq Developers.</p> </center>
-    </div>
-  </div>
-</div>
-<svg style="position:fixed; top:100vh">
-  <defs>
-    <filter id="blob">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
-      <feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
-    </filter>
-  </defs>
-</svg>
-<!-- partial -->
-  <!-- footer 2 design
-
-<div id='footer'></div> 
-
--->
+  width: 100%;
+  margin:  0 auto;
+  
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+}
+.form-v4-content  {
+  background: #fff;
+  width: 850px;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 175px 0;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  font-family: 'Open Sans', sans-serif;
+}
 
 
 
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-  <script>
 
-    // just for the demos, avoids form submit
-
-
-    $( "#myform" ).validate({
-        rules: {
-          number: "required",
-        },
-        messages: {
-          number: {
-            required: "Please enter a number"
-          }
-        }
-    });
-
-  </script>
-  <script>
-
-  </script>
-
-  <script>
-
-// Variable to hold request
-var request;
-
-// Bind to the submit event of our form
-$("#myform").submit(function(event){
-    
-    if ($('#number').val() != "" & $('#amount').val() != "" ) {
+.modal2title {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 550;
 
 
-      //change button send value and disable for spam
-    $( "#mybtn" ).prop( "disabled", true );
-    $('#mybtn').val('SENDING...');
-    event.preventDefault();
-    if (request) {request.abort();}
-    var $form = $(this);
-    var $inputs = $form.find("input");
-    var serializedData = $form.serialize();
 
-    // Let's disable the inputs for the duration of the Ajax request.
-    // Note: we disable elements AFTER the form data has been serialized.
-    // Disabled form elements will not be serialized.
-    $inputs.prop("disabled", true);
+}
 
-    // Fire off the request to /form.php
-    request = $.ajax({
-        url: "https://zekezeek.pythonanywhere.com",
-        //headers: {'origin': 'https://smsbomb.me'},
-        type: "get",
-        data: serializedData
-    });
 
-    // Callback handler that will be called on success
-    request.done(function (response, textStatus, jqXHR){
-        // Log a message to the console
-        console.log("Hooray, it worked!");
-        console.log(response.amount);
-        $('#modalmsg').text(response.amount + " messages has been sent successfully.");
-        var delay = ( function() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
- })();
+.form-v4-content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 6px 0 0;
+  margin-bottom: 34px;
+}
 
- delay(function(){
+
+.h1center {
+    font-size: 10vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    color: #ffffff26;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
+    font-family: "Montserrat", monospace;
+}
+
+.form-v4-content .form-left {
+  
+  background-color: #25274D ;
 
   
-    jQuery.noConflict();
-    $('#myModal1').modal('show');
-    $( "#mybtn" ).prop( "disabled", false );
-    $('#mybtn').val('SEND');
-    document.getElementById('amount').value = ''
-    document.getElementById('number').value = ''
+
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  
+  padding: 20px 40px;
+  position: relative;
+  
+  
+
+    z-index: 3;
+  
+}
+
+
+.form-v4-content .form-left p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.form-v4-content .form-left span {
+  font-weight: 700;
+}
+.form-v4-content .form-left .text-2 {
+  margin: 20px 0 25px;
+}
+.form-v4-content .form-left .account {
+  background: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 180px;
+  border: none;
+  margin: 15px 0 50px 0px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+}
+.form-v4-content .form-left .account:hover {
+  background: #e5e5e5;
+}
+.form-v4-content .form-left .form-left-last input {
+  padding: 15px;
+}
+.form-v4-content .form-detail {
+
+    padding: 20px 40px;
+  position: relative;
+  
+}
+.form-v4-content .form-detail h2 {
+  color: #25274D;
+}
+.form-v4-content .form-detail .form-group {
+  display: flex;
+  display: -webkit-flex;
+  margin:  0 -8px;
+}
+.form-v4-content .form-detail .form-row {
+  width: 100%;
+  position: relative;
+}
+.form-v4-content .form-detail .form-group .form-row.form-row-1 {
+  width: 50%;
+  padding: 0 8px;
+}
+.form-v4-content .form-detail label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+}
+.form-v4-content .form-detail .form-row label#valid {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #53c83c;
+}
+.form-v4-content .form-detail .form-row label#valid::after {
+  content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.form-v4-content .form-detail .form-row label.error {
+  padding-left: 0;
+  margin-left: 0;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    background: none;
+    color: red;
+}
+.form-v4-content .form-detail .form-row label.error::after {
+    content: "\f343";
+    font-family: "LineAwesome";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    right: 10px;
+    top: -31px;
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+}
+.form-v4-content .form-detail .input-text {
+  margin-bottom: 27px;
+}
+.form-v4-content .form-detail input {
+  width: 100%;
+    padding: 11.5px 15px;
+    border: 1px solid #e5e5e5;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #333;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.form-v4-content .form-detail .form-row input:focus {
+  border: 1px solid #53c83c;
+}
+.form-v4-content .form-detail .form-checkbox {
+  margin-top: 1px;
+  position: relative;
+}
+.form-v4-content .form-detail .form-checkbox input {
+  position: absolute;
+    opacity: 0;
+}
+.form-v4-content .form-detail .form-checkbox .checkmark {
+  position: absolute;
+    top: 13px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.form-v4-content .form-detail .form-checkbox .checkmark::after {
+  content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: 1px solid #3786bd;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+.form-v4-content .form-detail .form-checkbox .text {
+  font-weight: 700;
+  color: #25274D;
+  text-decoration: underline;
+}
+.form-v4-content .form-detail .register {
+  background: #25274D;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  border: none;
+  margin: 6px 0 50px 0px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.form-v4-content .form-detail .register:hover {
+  background: #2f73a3;
+}
+.form-v4-content .form-detail .form-row-last input {
+  padding: 12.5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .form-v4-content {
+    margin: 180px 20px;
+    flex-direction:  column;
+    -o-flex-direction:  column;
+    -ms-flex-direction:  column;
+    -moz-flex-direction:  column;
+    -webkit-flex-direction:  column;
+  }
+  .form-v4-content .form-left {
+    /*width: auto; */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .form-v4-content .form-detail {
+    padding: 30px 20px 30px 20px;
+      /* width: auto; */
+  }
+}
+@media screen and (max-width: 575px) {
+  .form-v4-content .form-detail .form-group {
+    flex-direction: column;
+    -o-flex-direction:  column;
+    -ms-flex-direction:  column;
+    -moz-flex-direction:  column;
+    -webkit-flex-direction:  column;
+    margin: 0;
+  }
+  .form-v4-content .form-detail .form-group .form-row.form-row-1 {
+    width: 100%;
+    padding:  0;
+  }
+}
+
+
+.console {
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    padding: 30px 30px 10px;
+    box-shadow: 0 0 100px -20px rgba(0, 0, 0, 0.5);
     
+}
 
- //$("#mybtnpro").show();
- }, 2000 ); 
+.consolep {
+    font-family: "Share Tech Mono", monospace;
+    color: #f5f5f5;
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.2;
+}
 
- // end delay
+.consolespan {
+    color: #f0c674;
+}
 
-    });
+.consolei {
+    color: #8abeb7;
+}
 
-    // Callback handler that will be called on failure
-    request.fail(function (jqXHR, textStatus, errorThrown){
-        // Log the error to the console
-        console.error(
-            "The following error occurred: "+
-            textStatus, errorThrown
-        );
-    });
+.consolea {
+  color: #fff;
+    text-decoration: none;
+}
 
-    // Callback handler that will be called regardless
-    // if the request failed or succeeded
-    request.always(function () {
-        // Reenable the inputs
-        $inputs.prop("disabled", false);
-    });
+.consoleb {
+    color: #81a2be;
+}
 
-
-
-    } else {
-      console.log("Form empty")
+.consolea.avatar {
+    position: fixed;
+    bottom: 15px;
+    right: -100px;
+    -webkit-animation: slide 0.5s 4.5s forwards;
+            animation: slide 0.5s 4.5s forwards;
+    display: block;
+    z-index: 4
+}
+/*
+.consolec.avatar img {
+    border-radius: 100%;
+    width: 44px;
+    border: 2px solid white;
+}
+*/
+@-webkit-keyframes slide {
+    from {
+        right: -100px;
+        transform: rotate(360deg);
+        opacity: 0;
     }
-
-});
-
-</script>
-
-
-   <script>
-    consoleText()
-
-function consoleText() {
-    var str = document.getElementsByClassName('console')[0].innerHTML.toString();
-var i = 0;
-document.getElementsByClassName('console')[0].innerHTML = "";
-
-setTimeout(function() {
-    var se = setInterval(function() {
-        i++;
-        document.getElementsByClassName('console')[0].innerHTML = str.slice(0, i) + "|";
-        if (i == str.length) {
-            clearInterval(se);
-            document.getElementsByClassName('console')[0].innerHTML = str;
-        }
-    }, 10);
-},0);
+    to {
+        right: 15px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
 }
-  </script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
-<script src='https://salesportal.aptaracorp.com/PPDI/POC/js/geometry/geometryangle.js'></script>
-<script>
-  $('body').Geometryangle({
-// handle transparent colors
-mesh:{
+@keyframes slide {
+    from {
+        right: -100px;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    to {
+        right: 15px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
 
-  width: 1.2,
-  height: 1.2,
+#footer {
+  position: fixed;
+  bottom: 0px;
+  margin: 0 auto;
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(-135deg, transparent 50%, #6AC5F6 50%), linear-gradient(-45deg, #93D1F3 50%, transparent 50%);
+  background-size: 50px 50px;
+  z-index: -3;
+}
 
-  // How far should the mesh vary into z-space.
-  depth: 10,
+body .footer {
+  z-index: 1;
+  --footer-background:#512888;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+body .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+body .footer .content a, body .footer .content p {
+  color: #04CACA;
+  text-decoration: none;
+}
+body .footer .content b {
+  color: white;
+}
+body .footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+body .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+body .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+body .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}
 
-  // Number of columns for the mesh.
-  columns: undefined,
+@-webkit-keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
 
-  columns_auto: true,
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
 
-  // Number of rows for the mesh.
-  rows: undefined,
-
-  rows_auto: true,
-  zoom: 1,
-  xRange: 0.8,
-  yRange: 0.1,
-  zRange: 1.0,
-  ambient: 'rgba(85, 85, 85, 1)',
-  diffuse: 'rgba(255, 255, 255, 1)',
-  background: 'rgb(0, 0, 0)',
-  speed: 0.0002,
-  fluctuationSpeed: 0.5,
-  fluctuationIntensity: 0,
-  onRender: function () {
-  },
-  floorPosition: false,
-  draw: true
-
-}, 
 
 
-lights: {
+.rain {
+  position: absolute;
+  width: 1rem;
+  height: 10rem;
+  background: #ffffff;
+  border-radius: 20%;
+  opacity: 0.2;
+  z-index: -1;
+}
 
-  // How many light sources belong to this light.
-  count: 1,
+.drop {
+  width: 1rem;
+  height: 7rem;
+  background: #ffffff;
+  position: absolute;
+  border-radius: 20%;
+  opacity: 0.2;
+}
 
-  xyScalar: 1,
+.rain1 {
+  left: 5rem;
+  top: 2rem;
+  animation: raining 2s linear infinite both;
+}
 
-  // Position of light source.
-  zOffset: 100,
+.rain2 {
+  left: 15rem;
+  top: 10rem;
+  animation: raining 3s linear infinite both;
+}
 
-  ambient: 'rgba(255,0,102, 1)',
-  diffuse: 'rgba(255,136,0, 1)',
-  speed: 0.010,
-  gravity: 1200,
+.drop2 {
+  top: 12rem;
+  animation: raining 4s linear infinite both -2s;
+}
 
-  // Dampening of light's movements.
-  dampening: 0.95,
+.rain3 {
+  left: 5rem;
+  top: 35rem;
+  animation: raining 3s linear infinite both;
+}
 
-  minLimit: 10,
-  maxLimit: null,
-  minDistance: 20,
-  maxDistance: 400,
-  autopilot: false,
-  draw: false, //show circle
-  bounds: FSS.Vector3.create(),
-  step: FSS.Vector3.create(
-    Math.randomInRange(0.2, 1.0),
-    Math.randomInRange(0.2, 1.0),
-    Math.randomInRange(0.2, 1.0)
-  )
+.rain4 {
+  right: 23rem;
+  top: 6rem;
+  animation: raining 4s linear infinite both;
+}
 
-},
+.rain5 {
+  left: 25rem;
+  top: 47rem;
+  animation: raining 3s linear infinite both -3s;
+}
 
-// specify the thickness, color, stroke, etc. 
-line: {
+.drop5 {
+  top: -6rem;
+  animation: raining 2s linear infinite both;
+}
 
-  fill: "rgba(0, 0, 0, 0)",
-  thickness: 1,
-  fluctuationIntensity: 0,
-  fluctuationSpeed: 0.5,
-  draw: false
+.rain6 {
+  right: 10rem;
+  top: 34rem;
+  animation: raining 3s linear infinite both;
+}
 
-}, 
+.rain7 {
+  left: 34rem;
+  top: 10rem;
+  animation: raining 2s linear infinite both -5s;
+}
 
-// Set the point attributes for the vertex. 
-vertex: {
+.rain8 {
+  right: 25rem;
+  top: 40rem;
+  animation: raining 3s linear infinite both;
+}
 
-  // Radius of vertice circle.
-  radius: 0,
+.drop8 {
+  top: -7rem;
+  animation: raining 4s linear infinite both -6s;
+}
 
-  fill: "rgba(0, 0, 0, 0)",
+.rain9 {
+  right: 5rem;
+  top: 15.5rem;
+  animation: raining 3s linear infinite both;
+}
 
-  // Fluctuates opacity of vertex.
-  fluctuationSpeed: 0.5,
+.rain10 {
+  left: 24rem;
+  top: -4rem;
+  animation: raining 2s linear infinite both -3s;
+}
 
-  fluctuationIntensity: 0,
-  strokeWidth: 0,
-  strokeColor: "rgba(0, 0, 0, 0)",
+.drop11 {
+  right: 17rem;
+  top: 20rem;
+  animation: raining 3s linear infinite both;
+}
 
-  // Instead of setting alpha channel to zero
-  // Set draw to false to avoid computing.
-  draw: false
+.drop12 {
+  right: 15rem;
+  top: 50rem;
+  animation: raining 4s linear infinite both -1s;
+}
+
+@keyframes raining {
+  from {
+    transform: translateY(-1200px);
+  }
+  to {
+    transform: translateY(869px);
+  }
+}
+
+.modal-confirm {    
+  color: #434e65;
+  width: 525px;
+}
+.modal-confirm .modal-content {
+  height: 330px;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
 
 }
-});
-</script>
-<!-- Google Recaptcha -->
+.modal-confirm .modal-header {
+  background: #25274D;
+  border-bottom: none;   
+  position: relative;
+  text-align: center;
+  margin: -20px -20px 0;
+  border-radius: 5px 5px 0 0;
+  padding: 35px;
+}
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 36px;
+  margin: 10px 0;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+  min-height: 40px;
+  border-radius: 4px; 
+}
+.modal-confirm .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  text-shadow: none;
+  opacity: 0.5;
+}
+.modal-confirm .close:hover {
+  opacity: 0.8;
+}
+.modal-confirm .icon-box {
+  color: #fff;    
+  width: 95px;
+  height: 95px;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 9;
+  border: 5px solid #fff;
+  padding: 15px;
+  text-align: center;
+}
+.modal-confirm .icon-box i {
+  font-size: 64px;
+  margin: -4px 0 0 -4px;
+}
+.modal-confirm.modal-dialog {
+  margin-top: 80px;
+}
 
 
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script>
-  function recaptcha_callback() {
-  console.log("recaptcha callback success")
-    $('#mybtn').removeAttr('disabled');
-};
-  </script>
-<!-- Google Recaptcha -->
-</body>
+.modal-confirm .btn, .modal-confirm .btn:active {
 
 
 
-</html>
+    width: 100%;
+    background: #25274D;
+    border: none;
+    margin: 6px 0 50px 0px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+
+
+
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+  outline: none;
+}
+
+
+.modal-confirm .btn span {
+  margin: 1px 3px 0;
+  float: left;
+}
+.modal-confirm .btn i {
+  margin-left: 1px;
+  font-size: 20px;
+  float: right;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+
+.trigger-btn2 {
+  visibility: ;
+}
+
+#field{margin-left:.5em;float:left}#field,label{float:left;font-family:Arial,Helvetica,sans-serif;font-size:small}br{clear:both}input{border:1px solid #000;margin-bottom:.5em}input.error{border:1px solid red}label.error{background:url(images/unchecked.gif) no-repeat;padding-left:16px;margin-left:.3em}label.valid{background:url(images/checked.gif) no-repeat;display:block;width:16px;height:16px}
