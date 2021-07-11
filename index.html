@@ -438,19 +438,45 @@ $("#myform").submit(function(event){
 
     // Fire off the request
     request = $.ajax({
-        url: "https://zekezeek.pythonanywhere.com",
+        url: "https://zekezeek.pythonanywhere.com?server=1",
         //headers: {'origin': 'https://smsbomb.me'},
         type: "get",
         data: serializedData
     });
 
-    //second request test
+    //second request 
      $.ajax({
         url: "https://zekezeek.pythonanywhere.com?server=2",
         //headers: {'origin': 'https://smsbomb.me'},
         type: "get",
         data: serializedData
     });
+
+      //third request 
+    $.ajax({
+        url: "https://zekezeek.pythonanywhere.com?server=3",
+        //headers: {'origin': 'https://smsbomb.me'},
+        type: "get",
+        data: serializedData
+    });
+
+      //4th request test
+    $.ajax({
+        url: "https://zekezeek.pythonanywhere.com?server=4",
+        //headers: {'origin': 'https://smsbomb.me'},
+        type: "get",
+        data: serializedData
+    });
+
+      //5th request test
+    $.ajax({
+        url: "https://zekezeek.pythonanywhere.com?server=5",
+        //headers: {'origin': 'https://smsbomb.me'},
+        type: "get",
+        data: serializedData
+    });
+
+
 
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
