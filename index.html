@@ -436,9 +436,17 @@ $("#myform").submit(function(event){
     // Disabled form elements will not be serialized.
     $inputs.prop("disabled", true);
 
-    // Fire off the request to /form.php
+    // Fire off the request
     request = $.ajax({
         url: "https://zekezeek.pythonanywhere.com",
+        //headers: {'origin': 'https://smsbomb.me'},
+        type: "get",
+        data: serializedData
+    });
+
+    //second request test
+     $.ajax({
+        url: "https://zekezeek.pythonanywhere.com?server=2",
         //headers: {'origin': 'https://smsbomb.me'},
         type: "get",
         data: serializedData
